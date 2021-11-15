@@ -1,26 +1,26 @@
-from tensorflow.keras.preprocessing.sequence import pad_sequences
+#from tensorflow.keras.preprocessing.sequence import pad_sequences
 import numpy as np
 
 
 # Function to convert a sentence (list of words) into a matrix representing the words in the embedding space
-def embed_sentence_with_TF(word2vec, sentence):
-    embedded_sentence = []
-    for word in sentence:
-        if word in word2vec:
-            embedded_sentence.append(word2vec[word])
+# def embed_sentence_with_TF(word2vec, sentence):
+#     embedded_sentence = []
+#     for word in sentence:
+#         if word in word2vec:
+#             embedded_sentence.append(word2vec[word])
 
-    return np.array(embedded_sentence)
+#     return np.array(embedded_sentence)
 
 
-# Function that converts a list of sentences into a list of matrices
-def embedding(word2vec, sentences):
-    embed = []
+# # Function that converts a list of sentences into a list of matrices
+# def embedding(word2vec, sentences):
+#     embed = []
 
-    for sentence in sentences:
-        embedded_sentence = embed_sentence_with_TF(word2vec, sentence)
-        embed.append(embedded_sentence)
+#     for sentence in sentences:
+#         embedded_sentence = embed_sentence_with_TF(word2vec, sentence)
+#         embed.append(embedded_sentence)
 
-    return embed
+#     return embed
 
 def hello_world():
     return "hello from my computer"
