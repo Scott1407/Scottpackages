@@ -22,6 +22,9 @@ def embedding(word2vec, sentences):
 
     return embed
 
+def hello_world():
+    return "hello from my computer"
+
 
 # if __name__ == "__main__":
 
